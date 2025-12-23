@@ -1,5 +1,9 @@
  const UserEnquiry = require('../../models/enquiry.model');
 
+
+ const hi = async (req, res) => {
+    res.status(200).send("Hello from Enquiry API");
+}
  // Controller function to insert a new enquiry
  const enquiryInsert = async (req, res) => {
     try {
@@ -12,9 +16,7 @@
 };
 
 
-const hi = async (req, res) => {
-    res.status(200).json({ message: "Welcome to Backend API CAll" });
-}
+
 
 const enquiryList = async (req, res) => {
     try {

@@ -9,6 +9,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
+
+app.use('/',enquiryRoutes);
 // Mount the enquiry routes
 app.use("/api/web/enquiry", enquiryRoutes);
 

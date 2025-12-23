@@ -1,6 +1,7 @@
 const express = require('express');
 const enquiryRouter = express.Router();
 const { enquiryInsert,enquiryList, enquiryDelete, enquiryEdit,hi } = require('../../controllers/web/userEnquiryController');
+console.log("Enquiry Router Loaded");
 enquiryRouter.get('/',hi);
 // Define the route for inserting a new enquiry
 enquiryRouter.post('/insert', enquiryInsert);
