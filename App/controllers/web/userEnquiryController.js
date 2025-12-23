@@ -11,6 +11,11 @@
     }
 };
 
+
+const hi = async (req, res) => {
+    res.status(200).json({ message: "Welcome to Backend API CAll" });
+}
+
 const enquiryList = async (req, res) => {
     try {
         const enquiries = await UserEnquiry.find();
@@ -48,5 +53,6 @@ module.exports = {
     enquiryInsert,
     enquiryList,
     enquiryDelete,
-    enquiryEdit
+    enquiryEdit,
+    hi
 };

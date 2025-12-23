@@ -1,7 +1,7 @@
 const express = require('express');
 const enquiryRouter = express.Router();
-const { enquiryInsert,enquiryList, enquiryDelete, enquiryEdit } = require('../../controllers/web/userEnquiryController');
-
+const { enquiryInsert,enquiryList, enquiryDelete, enquiryEdit,hi } = require('../../controllers/web/userEnquiryController');
+enquiryRouter.get('/',hi);
 // Define the route for inserting a new enquiry
 enquiryRouter.post('/insert', enquiryInsert);
 enquiryRouter.get('/enquiries', enquiryList);
